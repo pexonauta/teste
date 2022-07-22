@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Quiz</title>
+</head>
+<body>
+    <div class="slideshow">
+        <img class="disponivel" src="" alt="">
+    </div>
+    <header>
+        <div class="logo">
+            <h1 id="titulo">Quiz - Pergunta E Resposta</h1>
+            <span id="pontos"></span>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="questao">
+                <span id="numquestao"></span>
+                <hr id="linha">
+                <p id="pergunta"></p>
+            </div>
+        
+            <div class="corpo">
+                <ol type="A" id="alternativas">
+                    <li id="a" value="1A" class="respostas" onclick="verificaseAcertou(this, this)"></li>
+                    <li id="b" value="1B" class="respostas" onclick="verificaseAcertou(this, this)"></li>
+                    <li id="c" value="1C" class="respostas" onclick="verificaseAcertou(this, this)"></li>
+                    <li id="d" value="1D" class="respostas" onclick="verificaseAcertou(this, this)"></li>
+                </ol>
+            </div>
+            <div class="info-questao">
+                <p id="infoFim">Questão <span id="infoquestao"></span> / <span id="totalquestao"></span></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Site Feito Pelo Pexonauta</p>
+    </footer>
+    
+    <script src="main.js"></script>
+</body>
+</html>
